@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocultar Párrafo con jQuery</title>
+    
+    <!-- Incluir fuente Poppins desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Incluir el archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    
     <!-- Incluir jQuery desde CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Incluir el archivo JavaScript externo -->
@@ -11,8 +18,10 @@
 </head>
 <body>
 
-    <p id="parrafo">Este es un párrafo que será ocultado al hacer clic en el botón.</p>
-    <button id="ocultar-btn">Ocultar Párrafo</button>
+    <div class="content">
+        <p id="parrafo">Este es un párrafo que será ocultado al hacer clic en el botón.</p>
+        <button id="ocultar-btn">Ocultar Párrafo</button>
+    </div>
 
 </body>
 </html>

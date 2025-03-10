@@ -1,0 +1,75 @@
+/* Estilo general para la página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff7a18, #af002d, #319197); /* Fondo degradado vibrante */
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite; /* Animación para el fondo */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Animación del fondo */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Contenedor central */
+.content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto cuando pasas el ratón sobre el contenedor */
+.content:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para el párrafo */
+#parrafo {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+}
+
+/* Estilo para el botón */
+#ocultar-btn {
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto de hover en el botón */
+#ocultar-btn:hover {
+    background-color: #e67e22;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+/* Efecto de clic en el botón */
+#ocultar-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
